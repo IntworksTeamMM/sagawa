@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "72b952f55cf98237e95426235a9dffc7",
-    "content-hash": "d3a6c833e96a7b361e249652f3af8cac",
+    "hash": "376cd21bd8b2b54aa6390be36ab55d4b",
+    "content-hash": "753b900ea74247960a8afe84fc3be234",
     "packages": [
         {
             "name": "codeigniter/framework",
@@ -38,6 +38,48 @@
             "description": "The CodeIgniter framework",
             "homepage": "https://codeigniter.com",
             "time": "2016-10-28 15:13:14"
+        },
+        {
+            "name": "hanischit/codeigniter-restserver",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Hanisch-IT/codeigniter-restserver.git",
+                "reference": "7b7cb3d92017aa57e02d122093f7091d9b5fa500"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Hanisch-IT/codeigniter-restserver/zipball/7b7cb3d92017aa57e02d122093f7091d9b5fa500",
+                "reference": "7b7cb3d92017aa57e02d122093f7091d9b5fa500",
+                "shasum": ""
+            },
+            "require": {
+                "codeigniter/framework": ">=3.0",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "libraries/Format.php",
+                    "libraries/REST_Controller.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabian Hanisch",
+                    "email": "kontakt@hanisch-it.de"
+                }
+            ],
+            "description": "A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.",
+            "keywords": [
+                "codeigniter",
+                "restserver"
+            ],
+            "time": "2016-02-06 07:15:14"
         }
     ],
     "packages-dev": [],
@@ -46,6 +88,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.2.4"
+    },
     "platform-dev": []
 }
