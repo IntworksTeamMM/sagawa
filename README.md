@@ -2,26 +2,27 @@
 codeigniter3 RestAPI-Server
 
 ## install 
-
 composer install
 
-## settings
+## 設定ファイル
 
 development/config.php
-### update
+<code>
 $config['base_url'] = 'https://{host}/';
-
+</code>
 
 development/rest.php
-### add
+<code>
+$route['users/test']['GET'] = 'users/index';
+</code>
 
 
 development/routes.php
-
-### add
+<code>
 $route['users/test']['GET'] = 'users/index';
+</code>
 
 
-## sample
-''curl -X GET -H "Accept: application/json" https://{host}/users/test?type=json''
+## 動作検証
+'curl -X GET -H "Accept: application/json" https://{host}/users/test?type=json'
 
